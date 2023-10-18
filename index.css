@@ -13,6 +13,81 @@ body {
 
 
 
+.barrita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+
+    background-color: transparent;
+    justify-content: space-between;
+    width: 99%;
+    top: 0;
+
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    width: 300px;
+    justify-content: space-evenly;
+    padding: 0;
+    border: 0;
+}
+
+.cajaa{
+    
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.rayitas{
+
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent
+    
+}
+
+.botonrayas {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.usuario {
+    
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent
+}
+
+.botonuser {
+    
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 10px;
+}
+
+.menu {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+
 
 
 .principal{
