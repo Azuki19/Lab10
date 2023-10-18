@@ -21,7 +21,7 @@ function renderCard(m, index) {
                                 <img src="./iconos/yellow_fill_star.png" class="star">
                                 <img src="./iconos/yellow_fill_star.png" class="star">
                                 <img src="./iconos/yellow_fill_star.png" class="star">
-                                <img src="./iconos/yellow_outline_star.png" class="star">
+                                <img src="./iconos/yellow_fill_star.png" class="star">
                             </div>
                         </div>
                         
@@ -33,6 +33,14 @@ function renderCard(m, index) {
                 </div>
                 `
 ;
+
+const hasHighRating = m.ratingValue > 4.5;
+
+    const fifthStar = card.querySelector('.estrellitas img:nth-child(5)');
+
+    fifthStar.src = hasHighRating
+        ? './iconos/yellow_fill_star.png'
+        : './iconos/yellow_outline_star.png';
 
 card.addEventListener("click", function () {
     renderBanner(m);
@@ -112,7 +120,7 @@ function renderCard2(m, index) {
                                 <img src="./iconos/yellow_fill_star.png" class="star">
                                 <img src="./iconos/yellow_fill_star.png" class="star">
                                 <img src="./iconos/yellow_fill_star.png" class="star">
-                                <img src="./iconos/yellow_outline_star.png" class="star">
+                                <img src="./iconos/yellow_fill_star.png" class="star">
                             </div>
                         </div>
                         
@@ -124,6 +132,13 @@ function renderCard2(m, index) {
                 </div>
                 `
 ;
+const hasHighRating = m.ratingValue > 4.5;
+
+    const fifthStar = card.querySelector('.estrellitas img:nth-child(5)');
+
+    fifthStar.src = hasHighRating
+        ? './iconos/yellow_fill_star.png'
+        : './iconos/yellow_outline_star.png';
 
 card.addEventListener("click", function () {
     renderBanner(m);
